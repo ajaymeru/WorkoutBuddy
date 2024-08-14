@@ -23,7 +23,7 @@ const getworkout = async (req, res) => {
     }
 }
 
-// create WORKOUT RECORD
+// create WORKOUT RECORD POST
 const createWorkout = async (req, res) => {
     try {
         const newWorkot = new Workout(req.body);

@@ -4,7 +4,7 @@ const Workout = require("../models/workoutmodel")
 
 const router = express.Router()
 
-// REQUIRE CONTROLLER
+// REQUIRE CONTROLLER FROM workoutControllers 
 const { getworkouts, getworkout, createWorkout, editworkout, deleteworkout } = require("../controllers/workoutControllers")
 
 

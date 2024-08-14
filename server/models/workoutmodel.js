@@ -19,7 +19,7 @@ const workoutSchema = mongoose.Schema({
         timelapse: true
     })
 
-// CREATE MODEL FROM SCHEMA
+// CREATE MODEL FROM SCHEMA & "Workout" is collection name for DB
 const Workout = mongoose.model("Workout", workoutSchema)
 
 // EXPORT MODULE

@@ -8,11 +8,11 @@ require("./db/connection")
 // REQUIRE ROUTING
 const workoutRoutes = require("./routes/workoutroutes")
 
-// MIDDLEWARE 
+// JSON middleware for incoming req & storing in req.body
 app.use(express.json())
 
+// Middleware to enable CORS, allowing your API to be accessed from different domains
 app.use(cors());
-
 
 
 app.get("/", (req, res) => {
@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
 })
 
 // ROUTTES
+// Defining a route for the /api/workouts endpoint, using the imported workout routes
 app.use("/api/workouts", workoutRoutes)
 
 // CONNECTING TO PORT
