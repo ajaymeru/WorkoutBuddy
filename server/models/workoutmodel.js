@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 // SCHEMA FOR MODEL 
 const workoutSchema = mongoose.Schema({
-    titile: {
+    title: {
         type: String,
         required: true,
     },
@@ -13,10 +13,14 @@ const workoutSchema = mongoose.Schema({
     load: {
         type: String,
         required: true,
+    },
+    user_id:{
+        type: String,
+        required: true,
     }
 },
     {
-        timelapse: true
+        timelapse: true 
     })
 
 // CREATE MODEL FROM SCHEMA & "Workout" is collection name for DB
